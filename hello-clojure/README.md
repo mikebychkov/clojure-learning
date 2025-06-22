@@ -2,7 +2,7 @@
 
 ### Brian Will video course on Clojure basics:
 
-https://www.youtube.com/@briantwill - Brian Will channel (for some reason inactive at the moment)
+https://www.youtube.com/@briantwill - Brian Will channel 
 
 https://www.youtube.com/watch?v=9A9qsaZZefw&list=PLAC43CFB134E85266&pp=iAQB - course playlist
 

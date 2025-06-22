@@ -12,13 +12,13 @@
   (if (= n 0) 1
     (* n (factor (dec n))))
   )
-(factor 5) ; 20
+; (factor 5) ; 20
 
 (defn factor-big [n]
   (if (= n 0) 1
     (*' n (factor-big (dec n))))
   )
-(factor-big 5) ; 4894
+; (factor-big 5) ; 4894
 
 (defn factor-big-loop [n]
   (loop [x n y n]
@@ -26,7 +26,13 @@
       (recur (*' x (dec y)) (dec y))
       ))
   )
-(factor-big-loop 5) ; no stack-over-flow
+; (factor-big-loop 5) ; no stack-over-flow
+
+(defn factor-new [n]
+    (apply * (range 1 (inc n)))
+  )
+(factor-new 5)
+
 
 ;; FIZZBUZZ
 
@@ -42,7 +48,7 @@
       )
     (if (> x 0) (recur (dec x)))
     ))
-(fizz-buzz 100)
+; (fizz-buzz 100)
 
 (defn fizz-buzz-2 [n]
   (loop [x 1]
@@ -56,7 +62,7 @@
       )
     (if (< x n) (recur (inc x)))
     ))
-(fizz-buzz-2 100)
+; (fizz-buzz-2 100)
 
 (defn fizz-buzz-3 [n]
   (loop [x 1]
@@ -69,4 +75,4 @@
       )
     (if (< x n) (recur (inc x)))
     ))
-(fizz-buzz-3 100)
+; (fizz-buzz-3 100)

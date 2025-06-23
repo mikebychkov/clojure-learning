@@ -9,3 +9,9 @@
 (LocalDateTime/now)
 (. LocalDateTime now)
 (List/of)
+
+(doto (Calendar/getInstance)
+  (.set Calendar/YEAR 1987)
+  (.set Calendar/MONTH 0)
+  (.set Calendar/DAY_OF_MONTH 31)
+  )
